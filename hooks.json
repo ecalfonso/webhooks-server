@@ -1,7 +1,14 @@
 [
 	{
-		"id": "redeploy-webhook",
-		"execute-command": "/var/scripts/redeploy.sh",
-		"command-working-directory": "/var/webhook"
+		"id": "test",
+		"execute-command": "/home/ecalfonso/webhooks-srv/scripts/test.sh",
+		"command-working-directory": "/home/ecalfonso/webhooks-srv/scripts/",
+		"response-message": "Test executed and done."
+	},
+	{
+		"id": "wol",
+		"execute-command": "/home/ecalfonso/webhooks-srv/scripts/wol.sh",
+		"command-working-directory": "/home/ecalfonso/webhooks-srv/scripts/",
+		"response-message": "Send WOL request to Epic-PC."
 	}
 ]
