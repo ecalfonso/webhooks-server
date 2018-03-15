@@ -1,3 +1,3 @@
 #!/bin/bash
 
-/usr/bin/wakeonlan FC:AA:14:CC:BB:14
+/usr/bin/wakeonlan $1

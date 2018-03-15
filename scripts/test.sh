@@ -1,3 +1,3 @@
 #!/bin/bash
 
-echo Executed $0
+echo Executed $0 Arguments $1

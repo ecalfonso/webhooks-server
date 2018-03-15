@@ -3,12 +3,26 @@
 		"id": "test",
 		"execute-command": "/home/ecalfonso/webhooks-srv/scripts/test.sh",
 		"command-working-directory": "/home/ecalfonso/webhooks-srv/scripts/",
-		"response-message": "Test executed and done."
+		"response-message": "Test executed and done.",
+		"pass-arguments-to-command":
+		[
+			{
+				"source": "payload",
+				"name": "content"
+			}
+		]
 	},
 	{
 		"id": "wol",
 		"execute-command": "/home/ecalfonso/webhooks-srv/scripts/wol.sh",
 		"command-working-directory": "/home/ecalfonso/webhooks-srv/scripts/",
-		"response-message": "Send WOL request to Epic-PC."
+		"response-message": "Sent WOL Request to specified MAC Address.",
+		"pass-arguments-to-command":
+		[
+			{
+				"source": "payload",
+				"name": "content"
+			}
+		]
 	}
 ]
