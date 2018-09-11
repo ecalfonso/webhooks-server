@@ -24,11 +24,5 @@
 				"name": "content"
 			}
 		]
-	},
-	{
-		"id": "discord-bot-restart",
-		"execute-command": "/home/ecalfonso/webhooks-srv/scripts/restart-discord-bot.sh",
-		"command-working-directory": "/home/ecalfonso/webhooks-srv/scripts/",
-		"response-message": "Executing restart script."
 	}
 ]
