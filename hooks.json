@@ -1,5 +1,18 @@
 [
 	{
+		"id": "car-cmd",
+		"execute-command": "/home/ecalfonso/tesla/execute.sh",
+		"command-working-directory": "/home/ecalfonso/tesla/",
+		"response-message": "Car command received.",
+		"pass-arguments-to-command":
+		[
+			{
+			"source": "payload",
+			"name": "content"
+			}
+		]
+	},
+	{
 		"id": "test",
 		"execute-command": "/home/ecalfonso/webhooks-srv/scripts/test.sh",
 		"command-working-directory": "/home/ecalfonso/webhooks-srv/scripts/",
