@@ -6,13 +6,17 @@
 		"response-message": "Car command received.",
 		"pass-arguments-to-command":
 		[
-            {
-                "source": "payload",
-                "name": "secret"
-            },
-            {
-			    "source": "payload",
-			    "name": "content"
+			{
+				"source": "payload",
+				"name": "secret"
+			},
+			{
+				"source": "payload",
+				"name": "endpoint"
+			},
+			{
+				"source": "payload",
+				"name": "content"
 			}
 		]
 	},
@@ -25,12 +29,16 @@
 		[
 			{
 				"source": "payload",
-				"name": "content"
+				"name": "password"
 			},
-            {
-                "source": "payload",
-                "name": "password"
-            }
+			{
+				"source": "payload",
+				"name": "endpoint"
+			},
+			{
+				"source": "payload",
+				"name": "content"
+			}
 		]
 	},
 	{
