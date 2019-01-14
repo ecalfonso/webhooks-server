@@ -21,6 +21,23 @@
 		]
 	},
 	{
+		"id": "car-cmd-test",
+		"execute-command": "/home/ecalfonso/tesla_test/execute.sh",
+		"command-working-directory": "/home/ecalfonso/tesla_test/",
+		"response-message": "Test car command received.",
+		"pass-arguments-to-command":
+		[
+			{
+				"source": "payload",
+				"name": "secret"
+			},
+			{
+				"source": "payload",
+				"name": "cmd"
+			}
+		]
+	},
+	{
 		"id": "test",
 		"execute-command": "/home/ecalfonso/webhooks-srv/scripts/test.sh",
 		"command-working-directory": "/home/ecalfonso/webhooks-srv/scripts/",
