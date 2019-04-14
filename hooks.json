@@ -1,8 +1,8 @@
 [
 	{
 		"id": "car-cmd",
-		"execute-command": "/home/ecalfonso/tesla/execute.sh",
-		"command-working-directory": "/home/ecalfonso/tesla/",
+		"execute-command": "/home/pi/tesla/execute.sh",
+		"command-working-directory": "/home/pi/tesla/",
 		"response-message": "Car command received.",
 		"pass-arguments-to-command":
 		[
@@ -17,26 +17,9 @@
 		]
 	},
 	{
-		"id": "car-cmd-test",
-		"execute-command": "/home/ecalfonso/tesla_test/execute.sh",
-		"command-working-directory": "/home/ecalfonso/tesla_test/",
-		"response-message": "Test car command received.",
-		"pass-arguments-to-command":
-		[
-			{
-				"source": "payload",
-				"name": "secret"
-			},
-			{
-				"source": "payload",
-				"name": "cmd"
-			}
-		]
-	},
-	{
 		"id": "test",
-		"execute-command": "/home/ecalfonso/webhooks-srv/scripts/test.sh",
-		"command-working-directory": "/home/ecalfonso/webhooks-srv/scripts/",
+		"execute-command": "/home/pi/webhooks-srv/scripts/test.sh",
+		"command-working-directory": "/home/pi/webhooks-srv/scripts/",
 		"response-message": "Test executed and done.",
 		"pass-arguments-to-command":
 		[
@@ -56,8 +39,8 @@
 	},
 	{
 		"id": "wol",
-		"execute-command": "/home/ecalfonso/webhooks-srv/scripts/wol.sh",
-		"command-working-directory": "/home/ecalfonso/webhooks-srv/scripts/",
+		"execute-command": "/home/pi/webhooks-srv/scripts/wol.sh",
+		"command-working-directory": "/home/pi/webhooks-srv/scripts/",
 		"response-message": "Sent WOL Request to specified MAC Address.",
 		"pass-arguments-to-command":
 		[
