@@ -8,6 +8,31 @@
 		[
 			{
 				"source": "payload",
+				"name": "user"
+			},
+			{
+				"source": "payload",
+				"name": "secret"
+			},
+			{
+				"source": "payload",
+				"name": "cmd"
+			}
+		]
+	},
+	{
+		"id": "car-cmd-test",
+		"execute-command": "/home/pi/tesla-dev/execute.sh",
+		"command-working-directory": "/home/pi/tesla-dev/",
+		"response-message": "Car command received.",
+		"pass-arguments-to-command":
+		[
+			{
+				"source": "payload",
+				"name": "user"
+			},
+			{
+				"source": "payload",
 				"name": "secret"
 			},
 			{
